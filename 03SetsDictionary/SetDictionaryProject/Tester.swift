@@ -10,19 +10,27 @@ import Foundation
 struct Tester {
     /// Remove an array with the duplicated values removed
     func removeDups(nums: [Int]) -> [Int] {
-        
-        return []
+        let output = Array(Set(nums))
+        return output
     }
     
     /// Find the nums that exist in both arrays
     func findCommonNums(from firstNums: [Int], and secondNums: [Int]) -> [Int] {
-        
-        return []
+        let common = firstNums.filter { num in
+            secondNums.contains(num)
+        }
+        return common
     }
     
     /// first: "hello", second: "bye" -> ["e"]
     func findMatchingLetters(firstWord: String, secondWord: String) -> [Character] {
-        return []
+        var output = [Character]()
+        firstWord.forEach { letter in
+            if secondWord.contains(letter) {
+                output.append(letter)
+            }
+        }
+        return output
     }
     
     
