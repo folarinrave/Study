@@ -64,13 +64,9 @@ extension Tester {
     
     /// Using loop and string.index, return true if input is a palindrome
     func isPalindrome(word: String) -> Bool {
-//        var lastIdx = word.index(before: word.endIndex)
-//        for (_, letter) in word.enumerated() {
-//            if letter != word[word.index(before: word.endIndex)] {
-//                return false
-//            }
-////            lastIdx - 1
-//        }
+        for char in word {
+            
+        }
         return false
     }
 }
