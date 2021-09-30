@@ -29,7 +29,11 @@ extension Tester {
     /// given a word, flip its characters, and print the result
     /// e.g. football -> llabtoof
     func flipWord(word: String) {
-        print(word.reversed())
+        var flipped = ""
+        for char in word.reversed() {
+            flipped.append(char)
+        }
+        print(flipped)
     }
     
     /// Using for-in-enumerated(), print odd-position chars in word
@@ -50,23 +54,21 @@ extension Tester {
      one -> oneyay
      */
     func printPigLatin(word: String) {
-        var word = word
-        let vowels: [String] = ["a", "e", "i", "o", "u"]
-        let firstLetter = String(word[word.startIndex])
+        var pigWord = word
+        let firstLetter = word[word.index(word.startIndex, offsetBy: 0)]
+        let vowels: [Character] = ["a", "e", "i", "o", "u"]
+        
         if vowels.contains(firstLetter) {
-            word += "yay"
+            pigWord += "yay"
         } else {
-            word.remove(at: word.startIndex)
-            word.insert(Character(firstLetter), at: word.endIndex)
-            word += "ay"
+            let firstChar = String(pigWord.removeFirst())
+            pigWord += firstChar + "ay"
         }
+        print(pigWord)
     }
     
     /// Using loop and string.index, return true if input is a palindrome
     func isPalindrome(word: String) -> Bool {
-        for char in word {
-            
-        }
-        return false
+        return word == String(word.reversed())
     }
 }
