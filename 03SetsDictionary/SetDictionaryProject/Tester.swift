@@ -37,31 +37,45 @@ struct Tester {
     /// Create a dictionary of the counts of the letters, ignoring spaces
     func createCounter(string: String) -> [Character: Int] {
         var counterDict = [Character:Int]()
-        string.forEach { char in
-            if var doesExist = counterDict[char] {
-                doesExist += 1
+        let trimmedString = string.replacingOccurrences(of: " ", with: "")
+        trimmedString.forEach { char in
+            if counterDict[char] != nil {
+                counterDict[char]! += 1 // is this okay?
             } else {
                 counterDict[char] = 1
             }
-//            guard let doesExist = counterDict[char] else {
-//                counterDict[char] = 1
-//                return
-//            }
-//            if counterDict[char] {
-//                counterDict[char] + 1
-//            } else {
-//                counterDict[char] = 1
-//            }
         }
         return counterDict
     }
     
     /// Find most frequent letter in string: "hello there" -> "e"
     func mostFrequentLetter(string: String) -> Character {
-        return "."
+        var letterDict = [Character:Int]()
+        let trimmedString = string.replacingOccurrences(of: " ", with: "")
+        trimmedString.forEach { char in
+            if letterDict[char] != nil {
+                letterDict[char]! += 1
+            } else {
+                letterDict[char] = 1
+            }
+        }
+        
+        var max = Int()
+        var output = Character("i") // how to handle Character type initialization?
+        for (key, val) in letterDict {
+            if val > max {
+                max = val
+                output = key
+            }
+        }
+        
+        return output
     }
     
     /// O(n) time: avoid nested for loops
+    /// Input: [1, 1]
+    /// Output: 0
+    /// not exactly sure what the prompt is asking ? maybe if the input was [[1,1], [2,2]]  ?
     func findPairs(nums: [Int]) -> Int {        
         return 1
     }
