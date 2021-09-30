@@ -18,24 +18,32 @@ class Tester {
 
     /// 2. Write a function to return the last half of the array, not including the median
     func lastHalf(array: [Int]) -> [Int] {
-        guard array.count >=  1 else {return  array}
-        var lastHalf = [Int]()
-        if array.count == 2{
-            var res = [Int]()
-            res.append(array.last!)
+        guard array.count > 1 else { return array}
+        if array.count == 2 {
+            var res = array
+            res.removeFirst()
             return res
-        } else{
-            var res = [Int]()
-            var median = array.count/2
+        } else {
             
-            for i in median+1..<array.count {
-                res.append(array[i])
+            if array.count % 2 == 0 {
+                var median = (array.count/2)-1
+                var res = array
+                res.removeFirst(median+1)
+                return res
+                
+            } else {
+                var lastHalf = [Int]()
+                var res = [Int]()
+                var median = array.count/2
+                
+                for i in median+1..<array.count {
+                    res.append(array[i])
+                }
+                lastHalf = res
+                return lastHalf
             }
-            
-            
-            lastHalf = res
         }
-        return lastHalf
+        return []
     }
 
     /// 3. Write a function that can creates an array populated with integers going from start (input) to end (input)
@@ -104,18 +112,32 @@ class Tester {
         Ex. [ I, I, O] -> 2
      */
     func minimumChairs(array: [Character]) -> Int {
-        var count = 0
+        var  enter = 0
+        var exit = 0
+        
         for i in 0..<array.count {
-            if array[i] == "I" && i != 0 {
-                var prev = i-1
-                if array[prev] == "0" {
-                    
+            if i == 0 {
+                if array[i] == "I" {
+                    enter += 1
                 } else {
-                    count += 1
+                    exit += 1
+                }
+            } else {
+                if array[i] == "O" {
+                    exit += 1
+                } else {
+                    if array[i] == "I" && enter == exit {
+                        exit -= 1
+                    } else if array[i] == "I" && exit > enter {
+                        enter += i
+                    } else {
+                        enter += 1
+                    }
                 }
             }
+            print("enter: \(enter) exit: \(exit)")
         }
-        return count
+        return enter
     }
     
     /// 8. Pig latin but with words separated by spaces
@@ -171,15 +193,21 @@ class Tester {
     
     
     func maxProfit(array: [Int]) -> Int {
-        var maxProf = 0
-        var buy = array.min()
-        var buyIndex = array.firstIndex(of: buy!)
-        var arrayCopy = array.dropFirst(buyIndex!)
-        var sell = arrayCopy.max()
-        maxProf = sell!-buy!
-        
-        
-        return maxProf
+        var res = 0
+        var arrayCopy = array
+        arrayCopy.dropLast()
+        if let min = arrayCopy.min(){
+            arrayCopy = array
+            var buyIndex = arrayCopy.firstIndex(of: min)
+            for i in 0..<buyIndex! {
+                arrayCopy.remove(at: i)
+            }
+            if let max = arrayCopy.max() {
+                res = max-min
+            }
+            
+        }
+        return res
     }
     
     /**
