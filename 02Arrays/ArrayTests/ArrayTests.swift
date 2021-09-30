@@ -16,7 +16,7 @@ class ArrayTests: XCTestCase {
         let input = [1,2,3]
         let expected = [2,4,6]
     
-        let result = tester.multiplyByTwo(numbers: input)
+        let result = tester.multiplyByTwo(original: input)
         
         XCTAssertEqual(result, expected, "\n Result: \"\(result)\" \n Expected: \"\(expected)\"")
     }
