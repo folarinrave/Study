@@ -75,9 +75,18 @@ struct Tester {
     /// O(n) time: avoid nested for loops
     /// Input: [1, 1]
     /// Output: 0
-    /// not exactly sure what the prompt is asking ? maybe if the input was [[1,1], [2,2]]  ?
-    func findPairs(nums: [Int]) -> Int {        
-        return 1
+    func findPairs(nums: [Int]) -> Int {
+        var count = Int()
+        func findPair(firstPair: Int) {
+            let leftoverArr = nums[1...]
+            let secondPair = Int("-" + String(firstPair))
+            if leftoverArr.contains(secondPair!) == true {
+                count += 1
+                findPair(firstPair: leftoverArr[0])
+            }
+        }
+        findPair(firstPair: nums[0])
+        return count
     }
     
     /**
@@ -87,7 +96,23 @@ struct Tester {
      [1, 4, 8, 1] -> [1, 2, 3, 1]
      */
     func reduceDistanceKeepPriority(array: [Int]) -> [Int] {
-        return [1]
+        let set = Set(array).sorted()
+        var dict = [Int:Int]()
+        var output = [Int]()
+                
+        for (idx, num) in set.enumerated() {
+            if num == 1 {
+                dict[1] = 1
+            } else {
+                dict[num] = idx + 1
+            }
+        }
+        for num in array {
+            if let numPriority = dict[num] {
+                output.append(numPriority)
+            }
+        }
+        return output
     }
     
 }
