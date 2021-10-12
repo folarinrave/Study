@@ -7,12 +7,40 @@
 
 import UIKit
 
-class SecondPageViewController: UIViewController {
+class SecondPageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+   
+    
+    //MARK: - PROPERTIES
+    
+    var textInputs = [String]()
+    
+    //MARK: - OUTLETS
+    
+    @IBOutlet weak var inputsTableView: UITableView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        inputsTableView.delegate = self
+        inputsTableView.dataSource = self
+        
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //print(textInputs.count)
+        return textInputs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "inputCell", for: indexPath)
+        
+        cell.textLabel?.text = textInputs[indexPath.row]
+        return cell
     }
     
 
@@ -26,4 +54,12 @@ class SecondPageViewController: UIViewController {
     }
     */
 
+}
+
+extension SecondPageViewController: TextInputsDelegate {
+    func addInput(input: String) {
+        self.textInputs.append(input)
+    }
+    
+    
 }
