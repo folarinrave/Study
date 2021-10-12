@@ -22,8 +22,8 @@ class ArrayTests: XCTestCase {
     }
     
     func testLastHalf() throws {
-        let input = [1,2,3,4,5]
-        let expected = [4,5]
+        let input = [1,2,3,4,5,6]
+        let expected = [4,5,6]
     
         let result = tester.lastHalf(array: input)
         
