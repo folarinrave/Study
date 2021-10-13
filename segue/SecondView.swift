@@ -9,11 +9,15 @@ import UIKit
 
 protocol delegateSecondView {
     func addName(nameToAdd: [String])
+    func printHello()
 }
 
 class SecondView: UIViewController, UITableViewDelegate, UITableViewDataSource, delegateSecondView {
     func addName(nameToAdd: [String]) {
         names = nameToAdd
+    }
+    func printHello() {
+        print("hello world")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -14,8 +14,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func toSecondView(_ sender: Any) {
         performSegue(withIdentifier: "toSecondView", sender: nil)
     }
+
+    
+    
     var namesToSend: [String] = []
-    var delegate: delegateSecondView?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
