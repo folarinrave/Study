@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBAction func toSecondView(_ sender: Any) {
         performSegue(withIdentifier: "toSecondView", sender: nil)
     }
-    
+    var delegate: delegateSecondView?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -24,7 +24,8 @@ class ViewController: UIViewController {
         if segue.identifier == "toSecondView" {
             print("Its Working")
             let destinationVC = segue.destination as! SecondView
-            destinationVC.name = textField.text ?? ""
+            
+            destinationVC.addName(nameToAdd: textField.text ?? "")
         }
     }
 

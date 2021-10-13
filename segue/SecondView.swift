@@ -7,7 +7,15 @@
 
 import UIKit
 
-class SecondView: UIViewController, UITableViewDelegate, UITableViewDataSource {
+protocol delegateSecondView {
+    func addName(nameToAdd: String)
+}
+
+class SecondView: UIViewController, UITableViewDelegate, UITableViewDataSource, delegateSecondView {
+    func addName(nameToAdd: String) {
+        names.append(nameToAdd)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         names.count
     }
@@ -17,7 +25,7 @@ class SecondView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = names[indexPath.row]
         return cell
     }
-    
+    var delegate: delegateSecondView?
     var names: [String] = []
     var name: String = ""
     @IBOutlet weak var table: UITableView!
@@ -26,8 +34,9 @@ class SecondView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Do any additional setup after loading the view.
         table.delegate = self
         table.dataSource = self
-        names.append(name)
+        print(names)
     }
 
 
 }
+
