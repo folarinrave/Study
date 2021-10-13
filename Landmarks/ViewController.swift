@@ -7,13 +7,30 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+class ViewController: UIViewController, UITextFieldDelegate {
+    
+    
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var textField: UITextField!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSecondView" {
+            if let destinationVC = segue.destination as? SecondView {
+                destinationVC.addCell(textField.text ?? "")
+            }
+        }
     }
-
-
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        performSegue(withIdentifier: "toSecondView", sender: nil)
+        return false
+    }
+    
+    override func viewDidLoad(){
+        super.viewDidLoad()
+        textField.delegate = self
+    }
 }
+
 
