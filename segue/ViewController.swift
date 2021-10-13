@@ -8,16 +8,24 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textField: UITextField!
     @IBAction func toSecondView(_ sender: Any) {
         performSegue(withIdentifier: "toSecondView", sender: nil)
     }
+    var namesToSend: [String] = []
     var delegate: delegateSecondView?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.textField.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        namesToSend.append(textField.text ?? "")
+        textField.text = ""
+        return true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -25,7 +33,7 @@ class ViewController: UIViewController {
             print("Its Working")
             let destinationVC = segue.destination as! SecondView
             
-            destinationVC.addName(nameToAdd: textField.text ?? "")
+            destinationVC.addName(nameToAdd: namesToSend)
         }
     }
 
