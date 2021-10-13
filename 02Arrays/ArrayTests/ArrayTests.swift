@@ -48,11 +48,11 @@ class ArrayTests: XCTestCase {
         XCTAssertEqual(result, expected, "\n Result: \"\(result)\" \n Expected: \"\(expected)\"")
     }
     
-    func testFindPairs() throws {
+    func testFindPairsOfOpposites() throws {
         let input = [1,2,3,-1,-2,-4]
         let expected = 2
     
-        let result = tester.findPairs(nums: input)
+        let result = tester.findPairsOfOpposites(nums: input)
         
         XCTAssertEqual(result, expected, "\n Result: \"\(result)\" \n Expected: \"\(expected)\"")
     }

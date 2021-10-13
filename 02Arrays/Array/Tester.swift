@@ -79,6 +79,7 @@ class Tester {
 
     /// 5. Write a function that returns the number of pairs of elements that sums up to 0
     /// Input [1,2,3,-1,-2,-4] -> Output 2
+
     func findPairs(nums: [Int]) -> Int {
         var count = 0
         for i in 0..<nums.count {
@@ -89,6 +90,7 @@ class Tester {
            
         }
         return count
+
     }
     
     /// 6. Returns an array of indexes where the char occurs in input word
