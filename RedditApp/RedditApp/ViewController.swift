@@ -51,7 +51,9 @@ extension ViewController: UISearchBarDelegate {
                 DispatchQueue.main.async { [self] in
                     self?.tableView.reloadData()
                 }
+            
             }
+            searchBar.text = ""
         }
     }
 }
