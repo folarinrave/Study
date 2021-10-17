@@ -9,9 +9,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private lazy var spinner: UIActivityIndicatorView = {
+        let spinner = UIActivityIndicatorView()
+        spinner.hidesWhenStopped = true
+        return spinner
+    }()
+    
+    private lazy var errorAlert: UIAlertController = {
+        let alert = UIAlertController(title: "Error", message: "Sub does not exist", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        
+        alert.addAction(action)
+        
+        return alert
+    }()
+    
     @IBOutlet weak var tableView: UITableView!
     var data: [ChildrenData] = []
     @IBOutlet weak var searchBar: UISearchBar!
+    var delegate: Coordinator!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,6 +36,11 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
 
@@ -45,16 +67,24 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let toSearch = searchBar.text {
+            spinner.showSpinner(view)
             ViewModel.fetch(subreddit: toSearch) { [weak self] response in
-                self?.data = response
-                
-                DispatchQueue.main.async { [self] in
-                    self?.tableView.reloadData()
+                DispatchQueue.main.async {
+                    switch response {
+                        case let .success(response):
+                            self?.data = response
+                            self?.tableView.reloadData()
+                            self?.spinner.stopAnimating()
+                        case .failure:
+                            self?.present(self!.errorAlert, animated: true, completion: nil)
+                        self?.spinner.stopAnimating()
+                    }
                 }
-            
             }
-            searchBar.text = ""
         }
+    }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
     }
 }
 

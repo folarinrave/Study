@@ -10,9 +10,7 @@ import Foundation
 struct Response: Decodable {
     let kind: String
     let data: Data
-    
-   
-    
+//    let frank: String
 }
 
 struct Data: Decodable {

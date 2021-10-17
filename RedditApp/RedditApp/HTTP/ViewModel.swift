@@ -7,9 +7,14 @@
 
 import Foundation
 
+enum RedditError: Error {
+    case parse
+}
+
+typealias RedditResponse = Result<[ChildrenData], RedditError>
 
 class ViewModel {
-    static func fetch(subreddit:String, _ completion: @escaping ([ChildrenData]) -> Void) {
+    static func fetch(subreddit:String, _ completion: @escaping (RedditResponse) -> Void) {
         
         if let url = URL(string: "https://reddit.com/r/\(subreddit)/.json") {
             let request = URLRequest(url: url)
@@ -20,9 +25,11 @@ class ViewModel {
                 }
                 
                 guard let response: Response = try? JSONDecoder().decode(Response.self, from: data) else {
+                    completion(.failure(.parse))
                     return
                 }
-                completion(response.data.children)
+                print(response)
+                completion(.success(response.data.children))
             }.resume()
         }
     }
