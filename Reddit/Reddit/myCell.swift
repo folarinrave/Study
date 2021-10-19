@@ -9,6 +9,11 @@ import UIKit
 
 class myCell: UITableViewCell {
 
+    
+    @IBOutlet weak var subreddit: UILabel!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var score: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,4 +25,16 @@ class myCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    static func nib() -> UINib {
+        return UINib(nibName: "myCell", bundle: nil)
+    }
+    func setSubreddit(data: String) {
+        subreddit.text = data
+    }
+    func setTitle(data: String) {
+        title.text = data
+    }
+    func setScore(data:Int) {
+        score.text = String(data)
+    }
 }

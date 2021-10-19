@@ -7,35 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF2E91AD271CA17E005A8CC5 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E91AB271CA17E005A8CC5 /* myCell.swift */; };
-		EF2E91AE271CA17E005A8CC5 /* myCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2E91AC271CA17E005A8CC5 /* myCell.xib */; };
-		EF99DE5C2718AE9C0031D9DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF99DE5B2718AE9C0031D9DF /* AppDelegate.swift */; };
-		EF99DE5E2718AE9C0031D9DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF99DE5D2718AE9C0031D9DF /* SceneDelegate.swift */; };
-		EF99DE632718AE9C0031D9DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF99DE612718AE9C0031D9DF /* Main.storyboard */; };
-		EF99DE652718AE9E0031D9DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF99DE642718AE9E0031D9DF /* Assets.xcassets */; };
-		EF99DE682718AE9E0031D9DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF99DE662718AE9E0031D9DF /* LaunchScreen.storyboard */; };
-		EF99DE702718AF760031D9DF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF99DE6F2718AF760031D9DF /* ViewModel.swift */; };
-		EF99DE722718BB210031D9DF /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF99DE712718BB210031D9DF /* Response.swift */; };
-		EF99DE7C271C96110031D9DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF99DE7B271C96110031D9DF /* ViewController.swift */; };
+		EF2E91F8271F0393005A8CC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E91F7271F0393005A8CC5 /* AppDelegate.swift */; };
+		EF2E91FA271F0393005A8CC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E91F9271F0393005A8CC5 /* SceneDelegate.swift */; };
+		EF2E91FC271F0393005A8CC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E91FB271F0393005A8CC5 /* ViewController.swift */; };
+		EF2E91FF271F0393005A8CC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E91FD271F0393005A8CC5 /* Main.storyboard */; };
+		EF2E9201271F0394005A8CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2E9200271F0394005A8CC5 /* Assets.xcassets */; };
+		EF2E9204271F0394005A8CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E9202271F0394005A8CC5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EF2E91AB271CA17E005A8CC5 /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
-		EF2E91AC271CA17E005A8CC5 /* myCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myCell.xib; sourceTree = "<group>"; };
-		EF99DE582718AE9C0031D9DF /* Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF99DE5B2718AE9C0031D9DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF99DE5D2718AE9C0031D9DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF99DE622718AE9C0031D9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EF99DE642718AE9E0031D9DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EF99DE672718AE9E0031D9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EF99DE692718AE9E0031D9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF99DE6F2718AF760031D9DF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		EF99DE712718BB210031D9DF /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		EF99DE7B271C96110031D9DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF2E91F4271F0393005A8CC5 /* Persistence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Persistence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2E91F7271F0393005A8CC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF2E91F9271F0393005A8CC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF2E91FB271F0393005A8CC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF2E91FE271F0393005A8CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF2E9200271F0394005A8CC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF2E9203271F0394005A8CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF2E9205271F0394005A8CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EF99DE552718AE9C0031D9DF /* Frameworks */ = {
+		EF2E91F1271F0393005A8CC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,76 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EF99DE4F2718AE9C0031D9DF = {
+		EF2E91EB271F0393005A8CC5 = {
 			isa = PBXGroup;
 			children = (
-				EF99DE5A2718AE9C0031D9DF /* Reddit */,
-				EF99DE592718AE9C0031D9DF /* Products */,
+				EF2E91F6271F0393005A8CC5 /* Persistence */,
+				EF2E91F5271F0393005A8CC5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EF99DE592718AE9C0031D9DF /* Products */ = {
+		EF2E91F5271F0393005A8CC5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF99DE582718AE9C0031D9DF /* Reddit.app */,
+				EF2E91F4271F0393005A8CC5 /* Persistence.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EF99DE5A2718AE9C0031D9DF /* Reddit */ = {
+		EF2E91F6271F0393005A8CC5 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				EF99DE5B2718AE9C0031D9DF /* AppDelegate.swift */,
-				EF99DE5D2718AE9C0031D9DF /* SceneDelegate.swift */,
-				EF99DE612718AE9C0031D9DF /* Main.storyboard */,
-				EF2E91AB271CA17E005A8CC5 /* myCell.swift */,
-				EF2E91AC271CA17E005A8CC5 /* myCell.xib */,
-				EF99DE6F2718AF760031D9DF /* ViewModel.swift */,
-				EF99DE712718BB210031D9DF /* Response.swift */,
-				EF99DE642718AE9E0031D9DF /* Assets.xcassets */,
-				EF99DE662718AE9E0031D9DF /* LaunchScreen.storyboard */,
-				EF99DE692718AE9E0031D9DF /* Info.plist */,
-				EF99DE7B271C96110031D9DF /* ViewController.swift */,
+				EF2E91F7271F0393005A8CC5 /* AppDelegate.swift */,
+				EF2E91F9271F0393005A8CC5 /* SceneDelegate.swift */,
+				EF2E91FB271F0393005A8CC5 /* ViewController.swift */,
+				EF2E91FD271F0393005A8CC5 /* Main.storyboard */,
+				EF2E9200271F0394005A8CC5 /* Assets.xcassets */,
+				EF2E9202271F0394005A8CC5 /* LaunchScreen.storyboard */,
+				EF2E9205271F0394005A8CC5 /* Info.plist */,
 			);
-			path = Reddit;
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EF99DE572718AE9C0031D9DF /* Reddit */ = {
+		EF2E91F3271F0393005A8CC5 /* Persistence */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF99DE6C2718AE9E0031D9DF /* Build configuration list for PBXNativeTarget "Reddit" */;
+			buildConfigurationList = EF2E9208271F0394005A8CC5 /* Build configuration list for PBXNativeTarget "Persistence" */;
 			buildPhases = (
-				EF99DE542718AE9C0031D9DF /* Sources */,
-				EF99DE552718AE9C0031D9DF /* Frameworks */,
-				EF99DE562718AE9C0031D9DF /* Resources */,
+				EF2E91F0271F0393005A8CC5 /* Sources */,
+				EF2E91F1271F0393005A8CC5 /* Frameworks */,
+				EF2E91F2271F0393005A8CC5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Reddit;
-			productName = Reddit;
-			productReference = EF99DE582718AE9C0031D9DF /* Reddit.app */;
+			name = Persistence;
+			productName = Persistence;
+			productReference = EF2E91F4271F0393005A8CC5 /* Persistence.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EF99DE502718AE9C0031D9DF /* Project object */ = {
+		EF2E91EC271F0393005A8CC5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					EF99DE572718AE9C0031D9DF = {
+					EF2E91F3271F0393005A8CC5 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = EF99DE532718AE9C0031D9DF /* Build configuration list for PBXProject "Reddit" */;
+			buildConfigurationList = EF2E91EF271F0393005A8CC5 /* Build configuration list for PBXProject "Persistence" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,59 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = EF99DE4F2718AE9C0031D9DF;
-			productRefGroup = EF99DE592718AE9C0031D9DF /* Products */;
+			mainGroup = EF2E91EB271F0393005A8CC5;
+			productRefGroup = EF2E91F5271F0393005A8CC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF99DE572718AE9C0031D9DF /* Reddit */,
+				EF2E91F3271F0393005A8CC5 /* Persistence */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EF99DE562718AE9C0031D9DF /* Resources */ = {
+		EF2E91F2271F0393005A8CC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF99DE682718AE9E0031D9DF /* LaunchScreen.storyboard in Resources */,
-				EF2E91AE271CA17E005A8CC5 /* myCell.xib in Resources */,
-				EF99DE652718AE9E0031D9DF /* Assets.xcassets in Resources */,
-				EF99DE632718AE9C0031D9DF /* Main.storyboard in Resources */,
+				EF2E9204271F0394005A8CC5 /* LaunchScreen.storyboard in Resources */,
+				EF2E9201271F0394005A8CC5 /* Assets.xcassets in Resources */,
+				EF2E91FF271F0393005A8CC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EF99DE542718AE9C0031D9DF /* Sources */ = {
+		EF2E91F0271F0393005A8CC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF99DE5C2718AE9C0031D9DF /* AppDelegate.swift in Sources */,
-				EF2E91AD271CA17E005A8CC5 /* myCell.swift in Sources */,
-				EF99DE702718AF760031D9DF /* ViewModel.swift in Sources */,
-				EF99DE7C271C96110031D9DF /* ViewController.swift in Sources */,
-				EF99DE5E2718AE9C0031D9DF /* SceneDelegate.swift in Sources */,
-				EF99DE722718BB210031D9DF /* Response.swift in Sources */,
+				EF2E91FC271F0393005A8CC5 /* ViewController.swift in Sources */,
+				EF2E91F8271F0393005A8CC5 /* AppDelegate.swift in Sources */,
+				EF2E91FA271F0393005A8CC5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EF99DE612718AE9C0031D9DF /* Main.storyboard */ = {
+		EF2E91FD271F0393005A8CC5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EF99DE622718AE9C0031D9DF /* Base */,
+				EF2E91FE271F0393005A8CC5 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EF99DE662718AE9E0031D9DF /* LaunchScreen.storyboard */ = {
+		EF2E9202271F0394005A8CC5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EF99DE672718AE9E0031D9DF /* Base */,
+				EF2E9203271F0394005A8CC5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -182,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EF99DE6A2718AE9E0031D9DF /* Debug */ = {
+		EF2E9206271F0394005A8CC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		EF99DE6B2718AE9E0031D9DF /* Release */ = {
+		EF2E9207271F0394005A8CC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -298,7 +282,7 @@
 			};
 			name = Release;
 		};
-		EF99DE6D2718AE9E0031D9DF /* Debug */ = {
+		EF2E9209271F0394005A8CC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -307,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KNT9QUH8B5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Reddit/Info.plist;
+				INFOPLIST_FILE = Persistence/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DanielBrannon.Reddit;
+				PRODUCT_BUNDLE_IDENTIFIER = DanielBrannon.Persistence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,7 +310,7 @@
 			};
 			name = Debug;
 		};
-		EF99DE6E2718AE9E0031D9DF /* Release */ = {
+		EF2E920A271F0394005A8CC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -335,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KNT9QUH8B5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Reddit/Info.plist;
+				INFOPLIST_FILE = Persistence/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -346,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DanielBrannon.Reddit;
+				PRODUCT_BUNDLE_IDENTIFIER = DanielBrannon.Persistence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -357,25 +341,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EF99DE532718AE9C0031D9DF /* Build configuration list for PBXProject "Reddit" */ = {
+		EF2E91EF271F0393005A8CC5 /* Build configuration list for PBXProject "Persistence" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF99DE6A2718AE9E0031D9DF /* Debug */,
-				EF99DE6B2718AE9E0031D9DF /* Release */,
+				EF2E9206271F0394005A8CC5 /* Debug */,
+				EF2E9207271F0394005A8CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF99DE6C2718AE9E0031D9DF /* Build configuration list for PBXNativeTarget "Reddit" */ = {
+		EF2E9208271F0394005A8CC5 /* Build configuration list for PBXNativeTarget "Persistence" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF99DE6D2718AE9E0031D9DF /* Debug */,
-				EF99DE6E2718AE9E0031D9DF /* Release */,
+				EF2E9209271F0394005A8CC5 /* Debug */,
+				EF2E920A271F0394005A8CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EF99DE502718AE9C0031D9DF /* Project object */;
+	rootObject = EF2E91EC271F0393005A8CC5 /* Project object */;
 }

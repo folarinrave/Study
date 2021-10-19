@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Reddit
+//  RedditProgrammatically
 //
-//  Created by Daniel Brannon on 10/14/21.
+//  Created by Daniel Brannon on 10/18/21.
 //
 
 import UIKit
@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         // Override point for customization after application launch.
         return true
     }
