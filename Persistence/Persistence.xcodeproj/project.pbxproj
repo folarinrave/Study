@@ -13,6 +13,11 @@
 		EF2E91FF271F0393005A8CC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E91FD271F0393005A8CC5 /* Main.storyboard */; };
 		EF2E9201271F0394005A8CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2E9200271F0394005A8CC5 /* Assets.xcassets */; };
 		EF2E9204271F0394005A8CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E9202271F0394005A8CC5 /* LaunchScreen.storyboard */; };
+		EF2E920E271F0764005A8CC5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E920D271F0764005A8CC5 /* ViewModel.swift */; };
+		EF2E9210271F07CA005A8CC5 /* Model(Response).swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E920F271F07CA005A8CC5 /* Model(Response).swift */; };
+		EF2E9212271F1F42005A8CC5 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E9211271F1F42005A8CC5 /* DiskStorage.swift */; };
+		EF2E9219271F52A6005A8CC5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E9217271F52A6005A8CC5 /* TableViewCell.swift */; };
+		EF2E921A271F52A6005A8CC5 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2E9218271F52A6005A8CC5 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		EF2E9200271F0394005A8CC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF2E9203271F0394005A8CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF2E9205271F0394005A8CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF2E920D271F0764005A8CC5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EF2E920F271F07CA005A8CC5 /* Model(Response).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model(Response).swift"; sourceTree = "<group>"; };
+		EF2E9211271F1F42005A8CC5 /* DiskStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
+		EF2E9217271F52A6005A8CC5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EF2E9218271F52A6005A8CC5 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		EF2E91F6271F0393005A8CC5 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				EF2E91F7271F0393005A8CC5 /* AppDelegate.swift */,
-				EF2E91F9271F0393005A8CC5 /* SceneDelegate.swift */,
-				EF2E91FB271F0393005A8CC5 /* ViewController.swift */,
+				EF2E9216271F4A60005A8CC5 /* Model or Response */,
+				EF2E9213271F4A01005A8CC5 /* ViewModel */,
+				EF2E9214271F4A1A005A8CC5 /* View */,
+				EF2E9215271F4A3A005A8CC5 /* DiskStorage */,
+				EF2E921B27204DD4005A8CC5 /* Stuff Not Needed */,
 				EF2E91FD271F0393005A8CC5 /* Main.storyboard */,
 				EF2E9200271F0394005A8CC5 /* Assets.xcassets */,
 				EF2E9202271F0394005A8CC5 /* LaunchScreen.storyboard */,
 				EF2E9205271F0394005A8CC5 /* Info.plist */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		EF2E9213271F4A01005A8CC5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E920D271F0764005A8CC5 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EF2E9214271F4A1A005A8CC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E91FB271F0393005A8CC5 /* ViewController.swift */,
+				EF2E9217271F52A6005A8CC5 /* TableViewCell.swift */,
+				EF2E9218271F52A6005A8CC5 /* TableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF2E9215271F4A3A005A8CC5 /* DiskStorage */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E9211271F1F42005A8CC5 /* DiskStorage.swift */,
+			);
+			path = DiskStorage;
+			sourceTree = "<group>";
+		};
+		EF2E9216271F4A60005A8CC5 /* Model or Response */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E920F271F07CA005A8CC5 /* Model(Response).swift */,
+			);
+			path = "Model or Response";
+			sourceTree = "<group>";
+		};
+		EF2E921B27204DD4005A8CC5 /* Stuff Not Needed */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E91F9271F0393005A8CC5 /* SceneDelegate.swift */,
+				EF2E91F7271F0393005A8CC5 /* AppDelegate.swift */,
+			);
+			path = "Stuff Not Needed";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2E9204271F0394005A8CC5 /* LaunchScreen.storyboard in Resources */,
+				EF2E921A271F52A6005A8CC5 /* TableViewCell.xib in Resources */,
 				EF2E9201271F0394005A8CC5 /* Assets.xcassets in Resources */,
 				EF2E91FF271F0393005A8CC5 /* Main.storyboard in Resources */,
 			);
@@ -138,8 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2E9210271F07CA005A8CC5 /* Model(Response).swift in Sources */,
 				EF2E91FC271F0393005A8CC5 /* ViewController.swift in Sources */,
 				EF2E91F8271F0393005A8CC5 /* AppDelegate.swift in Sources */,
+				EF2E9212271F1F42005A8CC5 /* DiskStorage.swift in Sources */,
+				EF2E920E271F0764005A8CC5 /* ViewModel.swift in Sources */,
+				EF2E9219271F52A6005A8CC5 /* TableViewCell.swift in Sources */,
 				EF2E91FA271F0393005A8CC5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
