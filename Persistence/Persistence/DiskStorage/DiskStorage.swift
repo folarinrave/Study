@@ -15,7 +15,7 @@ enum DiskStorageError: Error {
 
 struct DiskStorage {
     
-    static func save(withKey key: String, value: String, using fileManager: FileManager = .default) throws {
+    static func save(withKey key: String, value: [Children], using fileManager: FileManager = .default) throws {
         let cacheDirectory = FileManager.SearchPathDirectory.cachesDirectory
         let folderURLs = fileManager.urls(for: cacheDirectory, in: .userDomainMask)
         print(folderURLs)
@@ -27,7 +27,7 @@ struct DiskStorage {
         try data.write(to: fileURL)
     }
     
-    static func read(fromKey key: String, using fileManager: FileManager = .default) throws -> String {
+    static func read(fromKey key: String, using fileManager: FileManager = .default) throws -> [Children] {
         
         let cacheDirectory = FileManager.SearchPathDirectory.cachesDirectory
         let folderURLs = fileManager.urls(for: cacheDirectory, in: .userDomainMask)
@@ -40,7 +40,7 @@ struct DiskStorage {
             throw DiskStorageError.noData
         }
         
-        let object = try JSONDecoder().decode(String.self, from: data)
+        let object = try JSONDecoder().decode([Children].self, from: data)
         return object
     }
 }

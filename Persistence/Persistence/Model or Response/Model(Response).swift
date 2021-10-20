@@ -18,10 +18,10 @@ struct jsonData: Decodable {
     
 }
 
-struct Children: Decodable {
+struct Children: Codable {
     let data: ChildrenData
     
 }
-struct ChildrenData: Decodable {
+struct ChildrenData: Codable {
     let title: String
 }

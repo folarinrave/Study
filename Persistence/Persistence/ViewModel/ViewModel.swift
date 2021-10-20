@@ -31,8 +31,8 @@ struct ViewModel:Decodable {
 
 
     
-static func checkFileManager(using key: String) -> String? {
-        guard let myKey: String = try? DiskStorage.read(fromKey: key) else {
+static func checkFileManager(using key: String) -> [Children]? {
+    guard let myKey: [Children] = try? DiskStorage.read(fromKey: key) else {
             return nil
         }
         return myKey

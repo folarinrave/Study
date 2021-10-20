@@ -45,8 +45,10 @@ extension ViewController: UITableViewDataSource{
 extension ViewController {
     func seeIfFileManagerIsEmpty() {
         if let myKey = ViewModel.checkFileManager(using: myTitle) {
-            try? DiskStorage.read(fromKey: self.myTitle, using: .default)
-        } else {
+            self.myData = try! DiskStorage.read(fromKey: self.myTitle, using: .default)
+        }
+        else
+        {
             ViewModel.fetch(myTitle: myTitle) { response in
                 
                 DispatchQueue.main.async {
@@ -55,7 +57,7 @@ extension ViewController {
                     let nib = UINib(nibName: "TableViewCell", bundle: nil)
                     self.tableView.register(nib, forCellReuseIdentifier: "TableViewCell")
                     self.tableView.reloadData()
-                    try? DiskStorage.save(withKey: self.myTitle, value: self.myTitle, using: .default)
+                    try? DiskStorage.save(withKey: self.myTitle, value: self.myData, using: .default)
                 }
             }
         }
