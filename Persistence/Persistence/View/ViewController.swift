@@ -45,6 +45,8 @@ extension ViewController: UITableViewDataSource{
 extension ViewController {
     func seeIfFileManagerIsEmpty() {
         if let myKey = ViewModel.checkFileManager(using: myTitle) {
+            try? DiskStorage.read(fromKey: self.myTitle, using: .default)
+        } else {
             ViewModel.fetch(myTitle: myTitle) { response in
                 
                 DispatchQueue.main.async {
