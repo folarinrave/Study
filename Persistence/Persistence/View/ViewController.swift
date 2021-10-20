@@ -53,6 +53,7 @@ extension ViewController {
                     let nib = UINib(nibName: "TableViewCell", bundle: nil)
                     self.tableView.register(nib, forCellReuseIdentifier: "TableViewCell")
                     self.tableView.reloadData()
+                    try? DiskStorage.save(withKey: self.myTitle, value: self.myTitle, using: .default)
                 }
             }
         }
