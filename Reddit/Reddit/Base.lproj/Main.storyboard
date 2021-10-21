@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Reddit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WAv-iT-0lb">
+                                <rect key="frame" x="0.0" y="142" width="414" height="720"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="1" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="NKu-3f-gIo"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="06b-aQ-Gg1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6CE-wX-Bkx"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="subredditLabel" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mg-1Y-9k1">
+                                <rect key="frame" x="0.0" y="94" width="414" height="40"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Wej-OY-ohh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WAv-iT-0lb" firstAttribute="top" secondItem="6Mg-1Y-9k1" secondAttribute="bottom" constant="8" symbolic="YES" id="0Dq-Ob-NuH"/>
+                            <constraint firstItem="WAv-iT-0lb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0Mq-EI-uI7"/>
+                            <constraint firstItem="06b-aQ-Gg1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="10D-lj-yVn"/>
+                            <constraint firstItem="WAv-iT-0lb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4Rl-HN-HRJ"/>
+                            <constraint firstItem="WAv-iT-0lb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C1I-Ac-RTO"/>
+                            <constraint firstItem="6Mg-1Y-9k1" firstAttribute="top" secondItem="06b-aQ-Gg1" secondAttribute="bottom" id="JEJ-sJ-Yw4"/>
+                            <constraint firstItem="6Mg-1Y-9k1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ssw-1L-MWR"/>
+                            <constraint firstItem="WAv-iT-0lb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bqV-ns-QAI"/>
+                            <constraint firstItem="6Mg-1Y-9k1" firstAttribute="top" secondItem="06b-aQ-Gg1" secondAttribute="bottom" id="fyd-3G-5aN"/>
+                            <constraint firstItem="6Mg-1Y-9k1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iqB-k1-gG5"/>
+                            <constraint firstItem="WAv-iT-0lb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pRf-He-4ch"/>
+                            <constraint firstItem="06b-aQ-Gg1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tQ3-cB-P70"/>
+                            <constraint firstItem="WAv-iT-0lb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vNW-el-1F7"/>
+                            <constraint firstItem="06b-aQ-Gg1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yg5-IJ-y3P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="06b-aQ-Gg1" id="avb-gv-70n"/>
+                        <outlet property="subredditLabel" destination="6Mg-1Y-9k1" id="ynQ-po-sWK"/>
+                        <outlet property="tableView" destination="WAv-iT-0lb" id="kLE-px-qFF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="48.883928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
