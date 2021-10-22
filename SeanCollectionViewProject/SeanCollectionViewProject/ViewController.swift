@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         configureSubViews()
         
         let flowlayout = UICollectionViewFlowLayout()
-        flowlayout.estimatedItemSize = CGSize(width: 130, height: 180)
+        flowlayout.itemSize = CGSize(width: 130, height: 180)
         redditCollectionView.collectionViewLayout = flowlayout
         
         redditCollectionView.delegate = self
