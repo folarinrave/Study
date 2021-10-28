@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Jokes View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="JokesVC" id="Y6W-OH-hqX" customClass="JokesViewController" customModule="week03assessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDP-kI-HYY">
+                                <rect key="frame" x="8" y="44" width="372" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="372" id="v60-xF-W0C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLx-hy-sec">
+                                <rect key="frame" x="8" y="144" width="372" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="372" id="ISN-vr-JNn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LLx-hy-sec" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="2Ir-lM-1M7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="LLx-hy-sec" secondAttribute="trailing" constant="34" id="Wnn-hz-RPJ"/>
+                            <constraint firstItem="mDP-kI-HYY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="j2n-ug-Rxr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mDP-kI-HYY" secondAttribute="trailing" constant="34" id="oyF-b4-Lyt"/>
+                            <constraint firstItem="LLx-hy-sec" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="qu1-ZA-eID"/>
+                            <constraint firstItem="mDP-kI-HYY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="sVD-Bd-Mlo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deliveryLabel" destination="LLx-hy-sec" id="tmh-uh-odK"/>
+                        <outlet property="setupLabel" destination="mDP-kI-HYY" id="P6c-An-KL4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.536231884057973" y="84.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
