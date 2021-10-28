@@ -13,7 +13,7 @@ protocol ViewControllerDelegate {
 
 class ViewController: UIViewController {
     
-    var myData: [Children]?
+    var myData: [Children] = []
     var delegate: ViewControllerDelegate?
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -42,8 +42,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        return myData?.count ?? 0
+        return myData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -51,7 +50,7 @@ extension ViewController: UICollectionViewDataSource {
             print("failed to dequeue cell")
             fatalError()
         }
-        cell.setLabel(string: myData![indexPath.row].data.title)
+        cell.setLabel(string: myData[indexPath.row].data.title)
         return cell
     }
     
@@ -69,7 +68,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        delegate?.done(url: myData![indexPath.row].data.url)
+        delegate?.done(url: myData[indexPath.row].data.url)
             }
 
 }

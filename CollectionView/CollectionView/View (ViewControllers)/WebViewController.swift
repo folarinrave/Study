@@ -9,7 +9,7 @@ import WebKit
 
 class WebViewController: UIViewController, WKUIDelegate {
     var webView: WKWebView!
-    var leURL: String?
+    var leURL: String = ""
     var delegate: ViewControllerDelegate?
     override func loadView() {
 //        self.view.backgroundColor = .cyan
@@ -20,6 +20,7 @@ class WebViewController: UIViewController, WKUIDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        let myRequest = URLRequest(url: URL(string: leURL!)!)
+        let myURL = URL(string: leURL)
+        let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
     }}

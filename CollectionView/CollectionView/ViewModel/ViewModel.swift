@@ -9,6 +9,7 @@ import Foundation
 
 
 struct ViewModel {
+    
     static func fetch(_ completion: @escaping (Response) -> Void) {
         if let url = URL(string: "https://reddit.com/r/nfl/.json") {
             let request = URLRequest(url: url)
