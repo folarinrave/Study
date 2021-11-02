@@ -7,31 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF2E92C727288DF4005A8CC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E92C627288DF4005A8CC5 /* AppDelegate.swift */; };
-		EF2E92C927288DF4005A8CC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E92C827288DF4005A8CC5 /* SceneDelegate.swift */; };
-		EF2E92CB27288DF4005A8CC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E92CA27288DF4005A8CC5 /* ViewController.swift */; };
-		EF2E92CE27288DF4005A8CC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E92CC27288DF4005A8CC5 /* Main.storyboard */; };
-		EF2E92D027288DF6005A8CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2E92CF27288DF6005A8CC5 /* Assets.xcassets */; };
-		EF2E92D327288DF6005A8CC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2E92D127288DF6005A8CC5 /* LaunchScreen.storyboard */; };
-		EF2E92DC272892F8005A8CC5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E92DB272892F8005A8CC5 /* SecondViewController.swift */; };
-		EF2E92DE27298699005A8CC5 /* NavCon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E92DD27298699005A8CC5 /* NavCon.swift */; };
+		EF753F7A272C47090063FE3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753F79272C47090063FE3E /* AppDelegate.swift */; };
+		EF753F7C272C47090063FE3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753F7B272C47090063FE3E /* SceneDelegate.swift */; };
+		EF753F7E272C47090063FE3E /* AnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753F7D272C47090063FE3E /* AnimeViewController.swift */; };
+		EF753F81272C47090063FE3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF753F7F272C47090063FE3E /* Main.storyboard */; };
+		EF753F83272C47090063FE3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF753F82272C47090063FE3E /* Assets.xcassets */; };
+		EF753F86272C47090063FE3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF753F84272C47090063FE3E /* LaunchScreen.storyboard */; };
+		EF753F94272C47AE0063FE3E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753F93272C47AE0063FE3E /* Network.swift */; };
+		EF753F96272C47D90063FE3E /* AnimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753F95272C47D90063FE3E /* AnimeModel.swift */; };
+		EF753F98272C47E30063FE3E /* AnimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753F97272C47E30063FE3E /* AnimeViewModel.swift */; };
+		EF753FA1272C7DF80063FE3E /* AnimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753F9F272C7DF80063FE3E /* AnimeCell.swift */; };
+		EF753FA2272C7DF80063FE3E /* AnimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF753FA0272C7DF80063FE3E /* AnimeCell.xib */; };
+		EF753FA42730DE3C0063FE3E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753FA32730DE3C0063FE3E /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EF2E92C327288DF4005A8CC5 /* Delegation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Delegation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF2E92C627288DF4005A8CC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF2E92C827288DF4005A8CC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF2E92CA27288DF4005A8CC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EF2E92CD27288DF4005A8CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EF2E92CF27288DF6005A8CC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EF2E92D227288DF6005A8CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EF2E92D427288DF6005A8CC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF2E92DB272892F8005A8CC5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		EF2E92DD27298699005A8CC5 /* NavCon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavCon.swift; sourceTree = "<group>"; };
+		EF753F76272C47090063FE3E /* AnimeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF753F79272C47090063FE3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF753F7B272C47090063FE3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF753F7D272C47090063FE3E /* AnimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewController.swift; sourceTree = "<group>"; };
+		EF753F80272C47090063FE3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF753F82272C47090063FE3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF753F85272C47090063FE3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF753F87272C47090063FE3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF753F93272C47AE0063FE3E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		EF753F95272C47D90063FE3E /* AnimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeModel.swift; sourceTree = "<group>"; };
+		EF753F97272C47E30063FE3E /* AnimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewModel.swift; sourceTree = "<group>"; };
+		EF753F9F272C7DF80063FE3E /* AnimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCell.swift; sourceTree = "<group>"; };
+		EF753FA0272C7DF80063FE3E /* AnimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimeCell.xib; sourceTree = "<group>"; };
+		EF753FA32730DE3C0063FE3E /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EF2E92C027288DF4005A8CC5 /* Frameworks */ = {
+		EF753F73272C47090063FE3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,82 +49,126 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EF2E92BA27288DF4005A8CC5 = {
+		EF753F6D272C47090063FE3E = {
 			isa = PBXGroup;
 			children = (
-				EF2E92C527288DF4005A8CC5 /* Delegation */,
-				EF2E92C427288DF4005A8CC5 /* Products */,
+				EF753F78272C47090063FE3E /* AnimeProject */,
+				EF753F77272C47090063FE3E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EF2E92C427288DF4005A8CC5 /* Products */ = {
+		EF753F77272C47090063FE3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF2E92C327288DF4005A8CC5 /* Delegation.app */,
+				EF753F76272C47090063FE3E /* AnimeProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EF2E92C527288DF4005A8CC5 /* Delegation */ = {
+		EF753F78272C47090063FE3E /* AnimeProject */ = {
 			isa = PBXGroup;
 			children = (
-				EF2E92DA27288E02005A8CC5 /* Unimportant */,
-				EF2E92CA27288DF4005A8CC5 /* ViewController.swift */,
-				EF2E92DB272892F8005A8CC5 /* SecondViewController.swift */,
-				EF2E92CC27288DF4005A8CC5 /* Main.storyboard */,
-				EF2E92DD27298699005A8CC5 /* NavCon.swift */,
-				EF2E92CF27288DF6005A8CC5 /* Assets.xcassets */,
-				EF2E92D127288DF6005A8CC5 /* LaunchScreen.storyboard */,
-				EF2E92D427288DF6005A8CC5 /* Info.plist */,
+				EF753F92272C47A30063FE3E /* Network */,
+				EF753F91272C47950063FE3E /* Storyboards */,
+				EF753F8E272C47410063FE3E /* Model */,
+				EF753F8D272C472B0063FE3E /* View Controller (View) */,
+				EF753F8F272C474E0063FE3E /* View Model */,
+				EF753F90272C47700063FE3E /* AppFiles */,
+				EF753F84272C47090063FE3E /* LaunchScreen.storyboard */,
+				EF753FA32730DE3C0063FE3E /* ImageCache.swift */,
+				EF753F87272C47090063FE3E /* Info.plist */,
 			);
-			path = Delegation;
+			path = AnimeProject;
 			sourceTree = "<group>";
 		};
-		EF2E92DA27288E02005A8CC5 /* Unimportant */ = {
+		EF753F8D272C472B0063FE3E /* View Controller (View) */ = {
 			isa = PBXGroup;
 			children = (
-				EF2E92C827288DF4005A8CC5 /* SceneDelegate.swift */,
-				EF2E92C627288DF4005A8CC5 /* AppDelegate.swift */,
+				EF753F7D272C47090063FE3E /* AnimeViewController.swift */,
+				EF753F9F272C7DF80063FE3E /* AnimeCell.swift */,
+				EF753FA0272C7DF80063FE3E /* AnimeCell.xib */,
 			);
-			path = Unimportant;
+			path = "View Controller (View)";
+			sourceTree = "<group>";
+		};
+		EF753F8E272C47410063FE3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF753F95272C47D90063FE3E /* AnimeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF753F8F272C474E0063FE3E /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF753F97272C47E30063FE3E /* AnimeViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		EF753F90272C47700063FE3E /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EF753F82272C47090063FE3E /* Assets.xcassets */,
+				EF753F7B272C47090063FE3E /* SceneDelegate.swift */,
+				EF753F79272C47090063FE3E /* AppDelegate.swift */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		EF753F91272C47950063FE3E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EF753F7F272C47090063FE3E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EF753F92272C47A30063FE3E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF753F93272C47AE0063FE3E /* Network.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EF2E92C227288DF4005A8CC5 /* Delegation */ = {
+		EF753F75272C47090063FE3E /* AnimeProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF2E92D727288DF6005A8CC5 /* Build configuration list for PBXNativeTarget "Delegation" */;
+			buildConfigurationList = EF753F8A272C47090063FE3E /* Build configuration list for PBXNativeTarget "AnimeProject" */;
 			buildPhases = (
-				EF2E92BF27288DF4005A8CC5 /* Sources */,
-				EF2E92C027288DF4005A8CC5 /* Frameworks */,
-				EF2E92C127288DF4005A8CC5 /* Resources */,
+				EF753F72272C47090063FE3E /* Sources */,
+				EF753F73272C47090063FE3E /* Frameworks */,
+				EF753F74272C47090063FE3E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Delegation;
-			productName = Delegation;
-			productReference = EF2E92C327288DF4005A8CC5 /* Delegation.app */;
+			name = AnimeProject;
+			productName = AnimeProject;
+			productReference = EF753F76272C47090063FE3E /* AnimeProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EF2E92BB27288DF4005A8CC5 /* Project object */ = {
+		EF753F6E272C47090063FE3E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					EF2E92C227288DF4005A8CC5 = {
-						CreatedOnToolsVersion = 13.0;
+					EF753F75272C47090063FE3E = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = EF2E92BE27288DF4005A8CC5 /* Build configuration list for PBXProject "Delegation" */;
+			buildConfigurationList = EF753F71272C47090063FE3E /* Build configuration list for PBXProject "AnimeProject" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,57 +176,61 @@
 				en,
 				Base,
 			);
-			mainGroup = EF2E92BA27288DF4005A8CC5;
-			productRefGroup = EF2E92C427288DF4005A8CC5 /* Products */;
+			mainGroup = EF753F6D272C47090063FE3E;
+			productRefGroup = EF753F77272C47090063FE3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF2E92C227288DF4005A8CC5 /* Delegation */,
+				EF753F75272C47090063FE3E /* AnimeProject */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EF2E92C127288DF4005A8CC5 /* Resources */ = {
+		EF753F74272C47090063FE3E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF2E92D327288DF6005A8CC5 /* LaunchScreen.storyboard in Resources */,
-				EF2E92D027288DF6005A8CC5 /* Assets.xcassets in Resources */,
-				EF2E92CE27288DF4005A8CC5 /* Main.storyboard in Resources */,
+				EF753FA2272C7DF80063FE3E /* AnimeCell.xib in Resources */,
+				EF753F86272C47090063FE3E /* LaunchScreen.storyboard in Resources */,
+				EF753F83272C47090063FE3E /* Assets.xcassets in Resources */,
+				EF753F81272C47090063FE3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EF2E92BF27288DF4005A8CC5 /* Sources */ = {
+		EF753F72272C47090063FE3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF2E92DC272892F8005A8CC5 /* SecondViewController.swift in Sources */,
-				EF2E92DE27298699005A8CC5 /* NavCon.swift in Sources */,
-				EF2E92CB27288DF4005A8CC5 /* ViewController.swift in Sources */,
-				EF2E92C727288DF4005A8CC5 /* AppDelegate.swift in Sources */,
-				EF2E92C927288DF4005A8CC5 /* SceneDelegate.swift in Sources */,
+				EF753F7E272C47090063FE3E /* AnimeViewController.swift in Sources */,
+				EF753F7A272C47090063FE3E /* AppDelegate.swift in Sources */,
+				EF753FA42730DE3C0063FE3E /* ImageCache.swift in Sources */,
+				EF753F96272C47D90063FE3E /* AnimeModel.swift in Sources */,
+				EF753FA1272C7DF80063FE3E /* AnimeCell.swift in Sources */,
+				EF753F98272C47E30063FE3E /* AnimeViewModel.swift in Sources */,
+				EF753F94272C47AE0063FE3E /* Network.swift in Sources */,
+				EF753F7C272C47090063FE3E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EF2E92CC27288DF4005A8CC5 /* Main.storyboard */ = {
+		EF753F7F272C47090063FE3E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EF2E92CD27288DF4005A8CC5 /* Base */,
+				EF753F80272C47090063FE3E /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EF2E92D127288DF6005A8CC5 /* LaunchScreen.storyboard */ = {
+		EF753F84272C47090063FE3E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EF2E92D227288DF6005A8CC5 /* Base */,
+				EF753F85272C47090063FE3E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -182,7 +238,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EF2E92D527288DF6005A8CC5 /* Debug */ = {
+		EF753F88272C47090063FE3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,7 +299,7 @@
 			};
 			name = Debug;
 		};
-		EF2E92D627288DF6005A8CC5 /* Release */ = {
+		EF753F89272C47090063FE3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -298,7 +354,7 @@
 			};
 			name = Release;
 		};
-		EF2E92D827288DF6005A8CC5 /* Debug */ = {
+		EF753F8B272C47090063FE3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -307,7 +363,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KNT9QUH8B5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Delegation/Info.plist;
+				INFOPLIST_FILE = AnimeProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,7 +374,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DanielBrannon.Delegation;
+				PRODUCT_BUNDLE_IDENTIFIER = DanielBrannon.AnimeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,7 +382,7 @@
 			};
 			name = Debug;
 		};
-		EF2E92D927288DF6005A8CC5 /* Release */ = {
+		EF753F8C272C47090063FE3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -335,7 +391,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KNT9QUH8B5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Delegation/Info.plist;
+				INFOPLIST_FILE = AnimeProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -346,7 +402,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DanielBrannon.Delegation;
+				PRODUCT_BUNDLE_IDENTIFIER = DanielBrannon.AnimeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -357,25 +413,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EF2E92BE27288DF4005A8CC5 /* Build configuration list for PBXProject "Delegation" */ = {
+		EF753F71272C47090063FE3E /* Build configuration list for PBXProject "AnimeProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF2E92D527288DF6005A8CC5 /* Debug */,
-				EF2E92D627288DF6005A8CC5 /* Release */,
+				EF753F88272C47090063FE3E /* Debug */,
+				EF753F89272C47090063FE3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF2E92D727288DF6005A8CC5 /* Build configuration list for PBXNativeTarget "Delegation" */ = {
+		EF753F8A272C47090063FE3E /* Build configuration list for PBXNativeTarget "AnimeProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF2E92D827288DF6005A8CC5 /* Debug */,
-				EF2E92D927288DF6005A8CC5 /* Release */,
+				EF753F8B272C47090063FE3E /* Debug */,
+				EF753F8C272C47090063FE3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EF2E92BB27288DF4005A8CC5 /* Project object */;
+	rootObject = EF753F6E272C47090063FE3E /* Project object */;
 }

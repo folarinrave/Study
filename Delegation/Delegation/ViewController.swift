@@ -8,12 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+        let secondVC = storyboard?.instantiateViewController(withIdentifier: "SecondViewController")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
 }
-

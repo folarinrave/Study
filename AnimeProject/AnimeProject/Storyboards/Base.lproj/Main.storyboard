@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anime View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AnimeViewController" customModule="AnimeProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="vot-0d-lHi">
+                                <rect key="frame" x="0.0" y="44" width="345" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pv0-zd-KnR">
+                                <rect key="frame" x="345" y="44" width="69" height="51"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Search"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="d3l-JL-Ke9">
+                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d3l-JL-Ke9" firstAttribute="top" secondItem="vot-0d-lHi" secondAttribute="bottom" id="43L-SH-LdT"/>
+                            <constraint firstItem="vot-0d-lHi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5jd-Sy-mj3"/>
+                            <constraint firstItem="Pv0-zd-KnR" firstAttribute="leading" secondItem="vot-0d-lHi" secondAttribute="trailing" id="AtV-p6-xBa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d3l-JL-Ke9" secondAttribute="bottom" id="DlU-e8-MT5"/>
+                            <constraint firstItem="vot-0d-lHi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NJ8-vr-5dR"/>
+                            <constraint firstItem="d3l-JL-Ke9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cbc-0V-RFb"/>
+                            <constraint firstItem="d3l-JL-Ke9" firstAttribute="top" secondItem="Pv0-zd-KnR" secondAttribute="bottom" id="iQc-W7-sGq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pv0-zd-KnR" secondAttribute="trailing" id="vN6-Cl-Sxv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d3l-JL-Ke9" secondAttribute="trailing" id="vXg-hQ-v7i"/>
+                            <constraint firstItem="Pv0-zd-KnR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xqi-FM-fni"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animeTableView" destination="d3l-JL-Ke9" id="yMf-FN-Gvy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
